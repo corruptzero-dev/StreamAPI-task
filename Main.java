@@ -13,7 +13,7 @@ public class Main {
             Вывести максимальное, минимальное значение, медиану и математическое ожидание
     */
     public static void main(String[] args) {
-        int[] arr = new Random().ints(2000,0, 100)
+        int[] arr = new Random().ints(0, 100)
                 .takeWhile(n -> n != 50)
                 .map(n -> (int) Math.pow(n, 2) / 10 - 100)
                 .filter(n -> n > 0)
